@@ -104,3 +104,21 @@ function quizCreator() {
       question_DIV.classList.add("question");
       question_DIV.innerHTML = i.question;
       div.appendChild(question_DIV);
+
+      const Score_Point = 100
+      const Max_Question = 4
+  
+      startGame = () => {
+          questionCounter = 0
+          score = 0
+          availableQuestions = [...questions]
+          getNewQuestion()
+  
+      }
+  
+      getNewQuestion = () => {
+          if (availableQuestions.length === 0 || questionsCounter > MAX_QUESTION) { localStorage.setItem('mostRecenScore', score)
+  
+          }
+  
+      }
