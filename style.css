@@ -140,3 +140,20 @@
   .hide {
     display: none;
   }
+  .correct {
+    background-color: #848583;
+    color: green;
+    border-color: green;
+  }
+  
+  .incorrect {
+    color: red;
+    border-color: red;
+    background-color: rgb(116, 115, 115);
+  }
+  
+  #user-score {
+    font-size: 1.5em;
+    color:black;
+    font-weight: bold;
+  }
