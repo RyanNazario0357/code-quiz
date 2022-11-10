@@ -78,3 +78,14 @@ const quizArray = [
               }
             }, 1000);
           };
+
+          const quizDisplay = (questionCount) => {
+            let quizCards = document.querySelectorAll(".container-mid");
+          
+          
+            quizCards.forEach((card) => {
+              card.classList.add("hide");
+            });
+
+            quizCards[questionCount].classList.remove("hide");
+};
