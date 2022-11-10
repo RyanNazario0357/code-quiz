@@ -121,3 +121,22 @@
     border: 1px solid #85848d;
     border-radius: 0.3em;
   }
+  .option-div:disabled {
+    color: #000000;
+    cursor: not-allowed;
+  }
+  
+  #next-button {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    background-color:gray;
+    color: black;
+    padding: 0.6em 1.9em;
+    border-radius: 0.4em;
+    float: right;
+  }
+  
+  .hide {
+    display: none;
+  }
