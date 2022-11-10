@@ -122,3 +122,15 @@ function quizCreator() {
           }
   
       }
+
+      div.innerHTML += `
+      <button class="option-div" onclick="checker(this)">${i.options[1]}</button>
+      <button class="option-div" onclick="checker(this)">${i.options[2]}</button>
+      <button class="option-div" onclick="checker(this)">${i.options[3]}</button>
+      <button class="option-div" onclick="checker(this)">${i.options[4]}</button>
+      `;
+      quizContainer.appendChild(div);
+    }
+  }
+
+  
