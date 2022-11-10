@@ -59,4 +59,22 @@ const quizArray = [
       } else {
             countOfQuestion.innerHTML =
                 questionCount + 1 + " of " + quizArray.length + " Question";
-  
+                
+                quizDisplay(questionCount);
+                count = 60;
+                clearInterval(countdown);
+                timerDisplay();
+              }
+            })
+          );
+          
+          const timerDisplay = () => {
+            countdown = setInterval(() => {
+              count--;
+              timeLeft.innerHTML = `${count}s`;
+              if (count == 0) {
+                clearInterval(countdown);
+                displayNext();
+              }
+            }, 1000);
+          };
