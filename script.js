@@ -14,3 +14,26 @@ let scoreCount = 0;
 let count = 60;
 let countdown;
 var c = 45
+
+const quizArray = [
+    {
+      id: "1",
+      question: "Who had the most console sales for the year 2021?", options:["Xbox","Playstation","Nintendo Switch","PC"], correct:"Playstation"
+    },
+    {
+      id: "2",
+   question:"What is the best gaming headset" ,
+   options:["Astro","Turtle Beaches","Hyperx","Razer"], correct:"Astro"
+  },
+  {
+      id: "3",
+   question:"Who is the strongest Marvel hero?" ,
+   options:["Thor", "Hulk","Iron Man","Wanda"], correct:"Wanda",
+  },
+  {
+      id: "4",
+   question:"Which phone is better?" ,
+   options:["Iphone", "Galaxy","HTC","LG"], correct:"Iphone",
+  },
+  ];
+  
