@@ -89,3 +89,18 @@ const quizArray = [
 
             quizCards[questionCount].classList.remove("hide");
 };
+
+function quizCreator() {
+    quizArray.sort(() => Math.random() - 0.5);
+  
+    for (let i of quizArray) {
+      let div = document.createElement("div");
+      div.classList.add("container-mid", "hide");
+  
+  
+      countOfQuestion.innerHTML = 1 + " of " + quizArray.length + " Question";
+  
+      let question_DIV = document.createElement("p");
+      question_DIV.classList.add("question");
+      question_DIV.innerHTML = i.question;
+      div.appendChild(question_DIV);
