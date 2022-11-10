@@ -96,4 +96,28 @@
     display: flex;
     align-self: center;
   }
+  .fa-alarm-clock{
+    color: black;
+    font-size: 1.5em;
+  }
   
+  .number-of-question{
+    font-weight: bold;
+  }
+  
+  .question {
+    margin-bottom: 1.25em;
+    font-weight: 600;
+  }
+  
+  .option-div {
+    font-size: 0.9em;
+    width: 100%;
+    padding: 1em;
+    margin: 0.3em 0;
+    text-align: left;
+    outline: none;
+    background: transparent;
+    border: 1px solid #85848d;
+    border-radius: 0.3em;
+  }
