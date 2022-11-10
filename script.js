@@ -133,4 +133,20 @@ function quizCreator() {
     }
   }
 
+  function checker(userOption) {
+    let userPlayer = userOption.innerText;
+    let question =
+      document.getElementsByClassName("container-mid")[questionCount];
+    let options = question.querySelectorAll(".option-div");
   
+    if (userPlayer === quizArray[questionCount].correct) {
+      userOption.classList.add("correct");
+      scoreCount++;
+    } else {
+      userOption.classList.add("incorrect");
+      options.forEach((element) => {
+        if (element.innerText == quizArray[questionCount].correct) {
+          element.classList.add("correct");
+        }
+      });
+    }
