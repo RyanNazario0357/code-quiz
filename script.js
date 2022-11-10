@@ -150,3 +150,20 @@ function quizCreator() {
         }
       });
     }
+
+    options.forEach((element) => {
+        element.disabled = true;
+      });
+    }
+    
+    function initial() {
+      quizContainer.innerHTML = "";
+      questionCount = 0;
+      scoreCount = 0;
+      count = 60;
+      clearInterval(countdown);
+      timerDisplay();
+      quizCreator();
+      quizDisplay(questionCount);
+    }
+    
